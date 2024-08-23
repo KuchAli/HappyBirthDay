@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Ulang Tahun!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Ucapan Selamat Ulang Tahun</h1>
+    <form class="nama">
+        <label for="nama" >Masukkan Nama:</label>
+        <input type="text" id="nama" name="nama" class="input" placeholder="masukkan nama anda ">
+        <br>
+        <label for="tema" style="margin-bottom: 10%;">Pilih Tema:</label>
+        <select id="tema" class="list">
+            <option value="cerah">Cerah</option>
+            <option value="gelap">Gelap</option>
+            <option value="pastel">Pastel</option>
+        </select>
+        <br>
+        <button type="button" class="list" onclick="ucapkan()">Ucapkan!</button>
+    </form>
+    <audio autoplay>
+        <source src="Audio dari Ali.mp3" type="audio/mp3">  
+    </audio>
+    <div id="ucapan"></div>
+    <script src="script.js"></script>
+</body>
+</html>

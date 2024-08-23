@@ -1,0 +1,76 @@
+/* Gaya dasar */
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: skyblue;
+    padding: 40px;
+}
+
+.nama{
+    background-color: #555555;
+    font-size: 100px;
+    display:grid;
+    align-items: center;
+    border-radius: 40px;
+    text-align: center;
+}
+
+h1{
+    font-size: 200px;
+}
+.input{
+    border-radius: 40px;
+    font-size: 20px;
+    
+}
+
+.list{
+    font-size: 60px;
+    text-align: center;
+   
+}
+
+#ucapan {
+    font-size: 2em;
+    margin-top: 20px;
+    
+}
+
+/* Gaya untuk setiap tema */
+.cerah {
+    background-color: #f0f0f0;
+    color: black;
+}
+
+.gelap {
+    background-color: #333;
+    color: white;
+}
+
+.pastel {
+    background-color: #e6e6fa;
+    color: salmon;
+}
+
+
+/* Media query untuk layar lebar */
+@media (min-width: 768px) {
+
+    header,
+    h1,form,label,input,select,
+    footer {
+        padding: 30px;
+        margin: 200px;
+    }
+}
+
+/* Media query untuk layar sempit */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    div {
+        font-size: 16px;
+    }
+}
